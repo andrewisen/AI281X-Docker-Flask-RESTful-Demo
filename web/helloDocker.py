@@ -6,6 +6,7 @@ from flask_restful import Resource, Api
 
 app = Flask(__name__)
 app.debug = True
+
 api = Api(app)
 
 class HelloWorld(Resource):
@@ -15,4 +16,4 @@ class HelloWorld(Resource):
 api.add_resource(HelloWorld, '/')
 
 if __name__ == '__main__':
-    app.run()
+    app.run('0.0.0.0')
