@@ -11,7 +11,7 @@ api = Api(app)
 
 class HelloWorld(Resource):
     def get(self):
-        return {'Hello': 'Docker'}
+        return {'Hello': 'KTH :)'}
 
 api.add_resource(HelloWorld, '/')
 
